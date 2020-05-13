@@ -1,0 +1,55 @@
+.body{
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    font-family: "Lexend Mega", sans-serif;
+    font-size: 16px;
+}
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 4px;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+nav a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+header h1{
+    font-size: 3rem;
+    text-align: center;
+    color: goldenrod;
+    margin:.7rem 0 1.5rem 0;
+}
+
+/*Banner*/
+.banner{
+    margin-top: 1.5rem;
+    background-image: url("https://www.malikjewellers.com/images/home-page-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.banner .banner_desc{
+    
+    position: 50%;
+
+}
+
