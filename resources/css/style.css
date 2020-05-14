@@ -19,8 +19,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;   
-    border-bottom: 2px solid #282B37;
+    background-color: black;    
 }
 .logo{
    letter-spacing: 4px;
@@ -50,6 +49,17 @@ header p{
     font-size: 2.5rem;
     text-align: center;
     color: white;
+}
+header .menu{
+    margin-right: 1rem;
+    display: none;   
+}
+.menu img{
+    height: 1.8rem;
+    padding: .9rem .5rem;
+}
+.menu:hover{
+    background-color: white;
 }
 
 /*Main*/
@@ -206,11 +216,67 @@ header p{
 /*footer*/
 footer{
     margin-top: 1rem;
-    width: 100%;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.1rem;
     margin-right: -2rem; 
     
+}
+
+@media only screen and (max-width: 500px){
+    /*header*/
+    .link a{
+        display: none;
+    }
+    header .menu {
+        display: inline-block;
+    }
+    /* contact*/
+    #contact{
+        margin-top: -2rem;
+        padding-top: 4rem;
+    }
+    #contact .left{
+       width: 80%;
+      margin-bottom: -1.5rem;
+    }
+    #contact .contact-container{
+    justify-content: center;
+    flex-direction: column;
+    }
+    /*product*/
+    .product{
+        padding: 0 3rem;
+    }
+    .product_container{
+        flex-direction: column;
+        width: 100%;
+    }
+     .product_container .product_box{
+        width: 100%;
+    }
+    .product_box .pic img{
+        width: 100%;
+    }
+    /*team*/
+    .team{
+        padding: 0 2rem;
+    }
+    .team-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .team-container .teammates{
+        width:100%;
+        height: 500px;
+        margin-bottom: 1rem;
+        
+    }
+    .teammates .description{
+        width: 100%;
+    }
+    
+
+
 }
