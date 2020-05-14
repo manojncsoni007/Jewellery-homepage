@@ -1,62 +1,87 @@
 .body{
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
 }
 html{
     font-family: "Lexend Mega", sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 /* HEADER */
 header{
+    height: 5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;    
     display: flex;
-    flex-direction: column;
-    letter-spacing: 4px;
-    justify-content: center;
-    align-items: center;
-    
-}
-header nav{
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;   
+    border-bottom: 2px solid #282B37;
+}
+.logo{
+   letter-spacing: 4px;
+   margin-left: 2rem;
+}
+
+header nav{
+    margin: 0 2rem;
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
 }
 nav a{
-    color: black;
+    margin: 1rem;
+    color:white;
     font-size: 1.5rem;
     text-decoration: none;
 }
 a:hover{
     color: blue;
 }
-header h1{
-    font-size: 3rem;
-    text-align: center;
+header span{
     color: goldenrod;
-    margin:.7rem 0 1.5rem 0;
+    font-weight: 700;
+}
+header p{
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+/*Main*/
+.main{
+    position: absolute;
+    top:5rem;
+    margin: -1.5rem;
+    width:100%;
 }
 
 /*Banner*/
 .banner{
-    margin-top: 1.5rem;
-    background-image: url("https://www.malikjewellers.com/images/home-page-banner.jpg");
+    background-image: url("../images/banner2.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     height: 500px;
+    margin-bottom: -2rem;
+    margin-right: -2rem;
 }
 
 /*Product*/
 .product{
     background-color: whitesmoke;
-    
+    margin: 0;    
+    border-bottom: 1px solid gray;
+    margin-right: -2rem;
 }
 .product h2{
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
 }
@@ -64,15 +89,14 @@ header h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .product_container .product_box{
     display: flex;
     flex-direction: column;
     width:230px;
     background-color: white;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pic:hover{
@@ -84,8 +108,7 @@ header h1{
     color: white;
 }
 .product_box .pic{
-    width: 100%;
-    
+    width: 100%;   
 }
 .product_box .pic img{
     width: 100%
@@ -96,3 +119,98 @@ header h1{
     text-align: center;
 }
 
+/* Our Team */
+.team{
+    background-color: white;
+    padding: .5rem;
+    margin-right: -2rem;   
+}
+.team h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.team .team-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+.team-container .teammates{
+    display: flex;
+    align-items: flex-end;
+    width: 18.75rem;
+    height: 28.12rem ;
+    margin: .5rem;
+}
+.teammates .description{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    align-items: flex-end;
+}
+#manoj{
+    background-image: url('../images/manoj.png');
+    background-size: cover;
+    background-position: center;
+}
+#chirag{
+    background-image: url('../images/chirag.png');
+    background-size: cover;
+    background-position: center;
+}
+#rahul{
+    background-image: url('../images/rahul.png');
+    background-size: cover;
+    background-position: center;
+}
+#pradip{
+    background-image: url('../images/pradip.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* contact us*/
+#contact{
+    margin-right: -2rem;
+}
+#contact h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+#contact .contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.contact-container .left{
+    width: 50%;
+    padding: 2rem 5rem;  
+}
+.left .pic{
+    width: 100%; 
+}
+.left .pic img{
+    width: 100%;  
+}
+.contact-container .right{  
+    width: 70%;
+    flex-grow: 1;
+    text-align: center;
+    font-family: cursive;  
+}
+/*footer*/
+footer{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-right: -2rem; 
+    
+}
