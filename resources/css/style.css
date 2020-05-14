@@ -232,6 +232,7 @@ footer{
     header .menu {
         display: inline-block;
     }
+    
     /* contact*/
     #contact{
         margin-top: -2rem;
@@ -252,12 +253,14 @@ footer{
     .product_container{
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
      .product_container .product_box{
-        width: 100%;
+        width: 80%;
     }
     .product_box .pic img{
         width: 100%;
+        height: 250px;
     }
     /*team*/
     .team{
@@ -266,10 +269,11 @@ footer{
     .team-container{
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
     .team-container .teammates{
-        width:100%;
-        height: 500px;
+        width:80%;
+        height: 400px;
         margin-bottom: 1rem;
         
     }
@@ -277,6 +281,4 @@ footer{
         width: 100%;
     }
     
-
-
 }
