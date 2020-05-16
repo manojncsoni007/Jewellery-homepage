@@ -1,5 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
 .body{
-    padding: 0;
     margin: 0;   
 }
 html{
@@ -56,7 +58,6 @@ header .menu{
 }
 .menu img{
     height: 1.8rem;
-    padding: .9rem .5rem;
 }
 .menu:hover{
     background-color: white;
@@ -65,9 +66,10 @@ header .menu{
 /*Main*/
 .main{
     position: absolute;
-    top:5rem;
-    margin: -1.5rem;
-    width:100%;
+    top:3.5rem;
+    width: 100%;
+    left: 0;
+   
 }
 
 /*Banner*/
@@ -230,7 +232,7 @@ footer{
         display: none;
     }
     header .menu {
-        display: inline-block;
+        display: inline-block; 
     }
     
     /* contact*/
