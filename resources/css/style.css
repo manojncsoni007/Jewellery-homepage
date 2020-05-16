@@ -55,10 +55,12 @@ header p{
 header .menu{
     margin-right: 1rem;
     display: none;   
+    padding: 1rem;
 }
 .menu img{
     height: 1.8rem;
     margin-right: 2rem;
+    
 }
 .menu:hover{
     background-color: white;
@@ -199,7 +201,6 @@ header .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;   
-    flex-wrap: wrap;
 }
 .contact-container .left{
     width: 50%;
