@@ -58,6 +58,7 @@ header .menu{
 }
 .menu img{
     height: 1.8rem;
+    margin-right: 1.5rem;
 }
 .menu:hover{
     background-color: white;
@@ -198,6 +199,7 @@ header .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;   
+    flex-wrap: wrap;
 }
 .contact-container .left{
     width: 50%;
@@ -241,8 +243,8 @@ footer{
         padding-top: 4rem;
     }
     #contact .left{
-       width: 80%;
-      margin-bottom: -1.5rem;
+       width: 100%;
+       margin-bottom: -1.5rem;
     }
     #contact .contact-container{
     justify-content: center;
